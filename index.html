@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        height: 100%;
+      }
+
+      .card-img-top {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+
+      .card-body {
+        flex: 1;
+      }
+
+      @media (min-width: 576px) {
+        .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+
+      @media (min-width: 768px) {
+        .card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      }
+
+      @media (min-width: 1280px) {
+        .card-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+      }
+    </style>
 </head>
 <body>
-    <section class="card" style="max-width: 320px">
+  <div class="card-grid">
+    <section class="card">
   <img src="https://imgs.cwgv.com.tw/pic/2021-04-21-1618994106.jpg" class="card-img-top" style="width: 100%;" alt="...">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
@@ -15,16 +53,69 @@
   </div>
 </section>
 
-</div class="xl:col-2 lg:col-3 md:col-6 sm:col-12">
-<section class="card" style="max-width: 320px">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE6h0MYJCeeZ37u6NZXbTVXevEAzmhrlBBmJc521QScqHh61LLrr6cHGaS&s=10" class="card-img-top" style="width: 100%; alt="...">
+<section class="card">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE6h0MYJCeeZ37u6NZXbTVXevEAzmhrlBBmJc521QScqHh61LLrr6cHGaS&s=10" class="card-img-top" style="width: 100%;" alt="...">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     <a href="#" class="btn-solid theme-primary">Go somewhere</a>
   </div>
 </section>
-</div>
 
+  <section class="card">
+  <img src="https://i.marieclaire.com.tw/ckeditor/images/vangogh-06x.jpg" class="card-img-top" style="width: 100%;" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+
+    <section class="card">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8RQNHhyphenhyphenyB6DNcpzTeZ3Ed3zDNwz2Ujj4NgZ4482fVgLCfCxdo3Iyp_ndiX4THJ8E8DJQcNrx12ThupNVaHyWScEZ0r6QZ2k1BTsfyWSAiJL6S-qTDi4Va0zycTwrbEXPvdz1duL4uL9ef/s1600/f_0456.jpg " class="card-img-top" style="width: 100%;" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+
+    <section class="card">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Irises-Vincent_van_Gogh.jpg/500px-Irises-Vincent_van_Gogh.jpg?utm_source=zh.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" class="card-img-top" style="width: 100%;" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+
+    <section class="card">
+  <img src="https://issues.ptsplus.tv/wp-content/uploads/2024/03/%E6%A2%B5%E8%B0%B7%E7%9A%84%E8%97%9D%E8%A1%93%E4%BD%9C%E5%93%81%E3%80%8A%E9%BA%A5%E7%94%B0%E7%BE%A4%E9%B4%89%E3%80%8B.jpg" class="card-img-top" style="width: 100%;" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+
+    <section class="card">
+  <img src="https://ialive.bwnet.com.tw/2017/05/fc410e7424c04688bba6028b24412869.jpg" class="card-img-top" style="width: 100%;" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+
+    <section class="card">
+  <img src="https://www.tmaroc.org.tw/wp-content/uploads/%E4%B8%BB%E8%A6%96%E8%A6%BA-39.png" class="card-img-top" style="width: 100%;" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+
+</div>
 </body>
 </html>
